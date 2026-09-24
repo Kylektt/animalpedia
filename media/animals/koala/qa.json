@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-09-24T05:38:56.708531+00:00",
+  "fullDecodePassed": true,
+  "durationAndCodecPassed": true,
+  "fastStartPassed": true,
+  "landscapeVisualReview": "Reviewed 15 sampled frames at one-second intervals; subject and feeding action remain in frame.",
+  "browserPlayback": "Not tested in the application; application does not yet exist in this checkout.",
+  "assets": [
+    {
+      "file": "koala-feeding.mp4",
+      "width": 1280,
+      "height": 720,
+      "durationSeconds": 15.0,
+      "fps": "30/1",
+      "bytes": 3317389,
+      "sha256": "3d3e140689eda051b25e37df9816d9083321fdb4bc2f6cbb7aacfe5dfd05a27d",
+      "codec": "h264",
+      "audio": false,
+      "fastStart": true
+    },
+    {
+      "file": "koala-feeding-portrait.mp4",
+      "width": 720,
+      "height": 1280,
+      "durationSeconds": 15.0,
+      "fps": "30/1",
+      "bytes": 2655166,
+      "sha256": "f80345022a9a0e35b9b23d6922adb9dfc19ed29a2cfe4e33c9b31d199c1c43f1",
+      "codec": "h264",
+      "audio": false,
+      "fastStart": true
+    }
+  ]
+}
