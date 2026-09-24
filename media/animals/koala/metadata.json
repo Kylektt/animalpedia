@@ -1,0 +1,68 @@
+{
+  "id": "koala-feeding",
+  "animalId": "koala",
+  "title": "Koala Feeding",
+  "description": "A koala holds a leafy branch and feeds on leaves.",
+  "scientificName": "Phascolarctos cinereus",
+  "mediaType": "edited-live-action",
+  "language": "en",
+  "source": {
+    "title": "Koala Feeding.webm",
+    "url": "https://commons.wikimedia.org/wiki/File:Koala_Feeding.webm",
+    "revisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Koala_Feeding.webm&oldid=664342574",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Koala_Feeding.webm",
+    "creator": "Classy Melissa",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "recordedDate": "2020-02-06",
+    "locationAsDescribedBySource": "Phillip Island, Victoria, Australia",
+    "retrievedAt": "2026-09-24T05:38:56.700031+00:00",
+    "sha256": "0cf5b6054462c0708cc389948b5245c7207c27a8ceb4e19621f6ef5f980541d2"
+  },
+  "attribution": "Footage: Classy Melissa / Wikimedia Commons (CC0 1.0). Edited for Animalpedia.",
+  "editing": {
+    "sourceStartSeconds": 8,
+    "durationSeconds": 15,
+    "speed": 1,
+    "audio": "Removed",
+    "landscapeCrop": {
+      "x": 0,
+      "y": 880,
+      "width": 2160,
+      "height": 1216
+    },
+    "portrait": "Full original frame, resized",
+    "otherChanges": "H.264 encoding, metadata removal, web fast-start. No generated imagery, added music, captions, or overlays."
+  },
+  "assets": [
+    {
+      "file": "koala-feeding.mp4",
+      "width": 1280,
+      "height": 720,
+      "durationSeconds": 15.0,
+      "fps": "30/1",
+      "bytes": 3317389,
+      "sha256": "3d3e140689eda051b25e37df9816d9083321fdb4bc2f6cbb7aacfe5dfd05a27d",
+      "codec": "h264",
+      "audio": false,
+      "fastStart": true
+    },
+    {
+      "file": "koala-feeding-portrait.mp4",
+      "width": 720,
+      "height": 1280,
+      "durationSeconds": 15.0,
+      "fps": "30/1",
+      "bytes": 2655166,
+      "sha256": "f80345022a9a0e35b9b23d6922adb9dfc19ed29a2cfe4e33c9b31d199c1c43f1",
+      "codec": "h264",
+      "audio": false,
+      "fastStart": true
+    }
+  ],
+  "posters": {
+    "landscape": "poster.jpg",
+    "portrait": "poster-portrait.jpg",
+    "timeInClipSeconds": 4
+  }
+}
