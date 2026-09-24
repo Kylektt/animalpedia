@@ -1,30 +1,30 @@
 # Animalpedia 🐾
 
-一个为 Codex Hackathon 打造的动物百科项目，灵感来自 Wikipedia。
+A collaborative animal encyclopedia inspired by Wikipedia, built for the Codex Hackathon.
 
-目标：让用户发现动物、阅读可信的百科介绍，并追溯信息来源。
+Our goal: help people discover animals, read reliable information, and explore the sources behind it.
 
-## 当前状态
+## Current status
 
-协作仓库已初始化，尚未实现应用。技术栈由团队在首个任务中确定。
+The collaboration repository is ready. The application has not been implemented yet. The team will select the technology stack in the first task.
 
-## 建议的 Hackathon MVP
+## Proposed Hackathon MVP
 
-- 动物列表：图片、名称和分类。
-- 搜索与分类筛选。
-- 动物详情：中英文名称、学名、简介、栖息地、食性及来源链接。
-- 先完成 10 种动物的优质内容，再扩充数量。
-- 每条重要事实保留来源；图片记录作者、来源和使用许可。
+- Animal directory with images, names, and categories.
+- Search and category filters.
+- Animal detail pages with common and scientific names, a summary, habitat, diet, and source links.
+- Start with well-researched content for 10 animals before expanding.
+- Cite important facts and record image creators, sources, and licenses.
 
-可选亮点：动物对比、地图探索、知识问答。核心流程完成后只选一个。
+Optional highlights: animal comparisons, map exploration, or a quiz. Choose one after the core flow works.
 
-## 开始协作
+## Getting started
 
-1. 加入仓库成为 collaborator；公开仓库的可见性不代表拥有写入权限。
-2. 在 [Issues](https://github.com/Kylektt/animalpedia/issues) 中认领一个任务，明确负责人。
-3. 阅读 [协作指南](CONTRIBUTING.md) 和 [数据约定草案](docs/data-contract.md)。
-4. 从最新 `main` 创建任务分支，完成后提交 Pull Request。
-5. 请另一位队友检查，再由集成人合并。
+1. Join the repository as a collaborator. Public visibility alone does not grant write access.
+2. Claim a task in [Issues](https://github.com/Kylektt/animalpedia/issues) and agree on its owner.
+3. Read the [contribution guide](CONTRIBUTING.md) and [draft data contract](docs/data-contract.md).
+4. Create a task branch from the latest `main`, then open a pull request when ready.
+5. Ask your teammate to review it before the integration owner merges it.
 
 ```sh
 git clone https://github.com/Kylektt/animalpedia.git
@@ -32,25 +32,25 @@ cd animalpedia
 git switch -c feat/your-task
 ```
 
-安装、开发和构建命令将在技术栈初始化任务完成后补充。
+Installation, development, and build commands will be added when the stack is initialized.
 
-## 建议分工
+## Suggested responsibilities
 
-| 工作 | 负责内容 | 协作边界 |
+| Owner | Responsibilities | Coordination boundary |
 | --- | --- | --- |
-| 你：浏览与集成 | 初始化、首页、列表、搜索筛选、构建和演示 | 统一依赖、公共配置与路由骨架 |
-| 队友：详情与内容 | 百科详情、10 种动物资料、图片许可和来源 | 每种动物独立数据文件，详情与列表共用 ID |
+| Kyle: browsing and integration | Setup, home page, directory, search, filters, builds, and demo | Coordinate dependencies, shared configuration, and route scaffolding |
+| Teammate: details and content | Detail pages, 10 animal entries, image licenses, and sources | One data file per animal; shared IDs across directory and detail pages |
 
-当前团队为两人。数据格式和页面风格先一起确定，然后各自负责一条完整的功能线；双方互相检查 PR。每个人可以在自己的任务分支使用 Codex，任务完成后由本人检查再提交。
+The current team has two members. Agree on the data format and visual direction together, then each own a complete feature area and review each other's PRs. Each person can use Codex on their task branch and should inspect the result before submitting it.
 
-建议前 20 分钟确定技术栈、数据格式和路由，先跑通一只动物从列表到详情的流程。随后并行扩展，每 45–60 分钟合并一次可运行的小改动。最后留出约 20% 的时间做集成和演示。
+Spend the first 20 minutes agreeing on the stack, data format, and routes. Get one animal working from directory to detail page, then expand in parallel. Merge small, working changes every 45–60 minutes. Reserve roughly the final 20% of the event for integration and the demo.
 
-## 演示验收
+## Demo acceptance criteria
 
-- 能找到一种动物并打开详情。
-- 搜索无结果、图片缺失、未知动物地址有合理提示。
-- 手机和桌面页面都能使用。
-- 事实与图片可以追溯来源。
-- README 提供真实可用的启动方式和演示地址。
+- A user can find an animal and open its detail page.
+- Empty search results, missing images, and unknown animal URLs have useful fallback states.
+- Pages work on mobile and desktop.
+- Facts and images can be traced to their sources.
+- The README includes verified setup instructions and the demo URL when available.
 
-本项目是独立 Hackathon 项目，与 Wikipedia / Wikimedia 无隶属关系。
+This is an independent Hackathon project with no affiliation to Wikipedia or Wikimedia.

@@ -1,5 +1,6 @@
 # Animalpedia contributor instructions
 
+- Write all project documentation, issues, PR descriptions, and user-facing copy in English. The initial MVP uses English animal names and content.
 - Read README.md, CONTRIBUTING.md, and the assigned issue before changing files.
 - Keep changes scoped to the assigned task. Coordinate shared configuration, dependencies, routes, and data contracts with the integration owner.
 - The application stack is not selected yet. Do not assume a framework or invent working setup commands; update README.md when the stack is initialized.
