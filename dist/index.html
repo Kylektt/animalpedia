@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet the koala in 3D. Rotate, explore, and discover its diet, habitat, and adaptations.">
+  <meta name="theme-color" content="#143c42">
+  <title>Koala · Animalpedia</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="Animalpedia home"><span class="brand-mark" aria-hidden="true">a.</span>Animalpedia</a>
+    <span class="edition">THE INTERACTIVE FIELD GUIDE</span>
+  </header>
+  <main>
+    <div class="heading">
+      <div><p class="eyebrow">AUSTRALIA / MARSUPIALS</p><h1>Meet the koala.</h1></div>
+      <p class="scientific">Phascolarctos cinereus</p>
+    </div>
+    <div class="explorer">
+      <section class="stage" aria-label="Interactive koala model">
+        <div class="stage-heading"><span>EXPLORE IN 3D</span><span class="model-note">Stylized model</span></div>
+        <model-viewer id="animal" src="./assets/koala.glb" poster="./assets/koala-poster.png"
+          alt="A stylized, low-poly koala. Drag or use the arrow keys to rotate. Select a numbered marker to learn more."
+          camera-controls disable-pan disable-tap touch-action="pan-y" camera-orbit="60deg 78deg 115%"
+          min-camera-orbit="auto 35deg 75%" max-camera-orbit="auto 110deg 180%"
+          field-of-view="30deg" shadow-intensity="0.8" shadow-softness="1" exposure="1"
+          environment-image="neutral" interaction-prompt="none" auto-rotate-delay="2500" rotation-per-second="12deg"
+          loading="eager" reveal="auto">
+        </model-viewer>
+        <img id="fallback-poster" class="fallback-poster" src="./assets/koala-poster.png" alt="A stylized illustration of a seated koala" hidden>
+        <div id="loading" class="loading" role="status">Loading your koala…</div>
+        <div id="model-error" class="model-error" hidden role="alert"><p>The 3D model could not load. You can still explore the facts.</p><button id="retry" type="button">Try again</button></div>
+        <div class="stage-footer">
+          <p>Drag to rotate <span aria-hidden="true">·</span> Tap a marker to explore</p>
+          <div class="viewer-controls"><button id="rotation" type="button" disabled aria-pressed="false">Start rotation</button><button id="reset" type="button" disabled>Reset view</button></div>
+        </div>
+      </section>
+      <aside class="field-notes" aria-label="Koala facts">
+        <p class="eyebrow">FIELD NOTES</p>
+        <h2>A little closer <br>to the wild.</h2>
+        <p class="intro">Get to know this tree-dwelling Australian marsupial. Choose a topic or tap the model.</p>
+        <div id="topics" class="topics" role="group" aria-label="Explore koala topics"></div>
+        <article id="fact" class="fact" aria-live="polite" aria-atomic="true">
+          <span id="fact-category" class="eyebrow">DIET</span>
+          <h3 id="fact-title">A specialist leaf-eater.</h3>
+          <p id="fact-body">Koalas mainly eat leaves from selected eucalypt species. Their food provides both nutrients and moisture.</p>
+          <a id="fact-source" href="https://australian.museum/learn/animals/mammals/koala/" target="_blank" rel="noopener noreferrer">Read the source <span aria-hidden="true">↗</span></a>
+        </article>
+        <p class="source-note">Facts from the Australian Museum.<br>The model is a stylized illustration, not an anatomical reference.</p>
+      </aside>
+    </div>
+  </main>
+  <footer><span>Made for curious minds.</span><span>Model: <a href="https://poly.pizza/m/9x4UY7n27nI" target="_blank" rel="noopener noreferrer">Koala by jeremy</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a></span></footer>
+  <noscript><p class="noscript">Enable JavaScript to rotate the model and change topics. The diet note and source link remain available above.</p></noscript>
+</body>
+</html>

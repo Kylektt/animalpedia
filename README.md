@@ -6,7 +6,9 @@ Our goal: help people discover animals, read reliable information, and explore t
 
 ## Current status
 
-The collaboration repository is ready. The application has not been implemented yet. The team will select the technology stack in the first task.
+A simple [interactive koala prototype](docs/koala-3d.md) is available on this branch: a locally served 3D model, rotation controls, and three source-linked knowledge topics. The full encyclopedia application has not been implemented yet.
+
+Run the prototype with `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist`, then open `http://127.0.0.1:4173/`. No package installation is required. Run `npm run check` for source and asset validation.
 
 ## Proposed Hackathon MVP
 
@@ -32,14 +34,14 @@ cd animalpedia
 git switch -c feat/your-task
 ```
 
-Installation, development, and build commands will be added when the stack is initialized.
+The current prototype uses static HTML, CSS, JavaScript, and a pinned local copy of model-viewer. The full application's stack remains a team decision.
 
 ## Suggested responsibilities
 
 | Owner | Responsibilities | Coordination boundary |
 | --- | --- | --- |
-| Kyle: browsing and integration | Setup, home page, directory, search, filters, builds, and demo | Coordinate dependencies, shared configuration, and route scaffolding |
-| Teammate: details and content | Detail pages, 10 animal entries, image licenses, and sources | One data file per animal; shared IDs across directory and detail pages |
+| Kyle: 3D assets and media | Animal models, consistent presentation, posters, topic markers, and asset provenance | Deliver models and metadata that the site can reuse |
+| Teammate: application and integration | Pages, directory, search, shared components, and integration | Coordinate dependencies, shared configuration, and routes |
 
 The current team has two members. Agree on the data format and visual direction together, then each own a complete feature area and review each other's PRs. Each person can use Codex on their task branch and should inspect the result before submitting it.
 
