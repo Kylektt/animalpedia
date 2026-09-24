@@ -8,6 +8,8 @@ Our goal: help people discover animals, read reliable information, and explore t
 
 A simple [interactive koala prototype](docs/koala-3d.md) is available on this branch: a locally served 3D model, rotation controls, and three source-linked knowledge topics. The full encyclopedia application has not been implemented yet.
 
+Free, realistic models for three Australian species are being evaluated. See the [asset sourcing report and shared rendering specification](docs/realistic-animal-assets.md). No new species model has passed review or been integrated yet.
+
 Run the prototype with `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist`, then open `http://127.0.0.1:4173/`. No package installation is required. Run `npm run check` for source and asset validation.
 
 ## Proposed Hackathon MVP
