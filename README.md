@@ -8,7 +8,9 @@ Our goal: help people discover animals, read reliable information, and explore t
 
 A simple [interactive koala prototype](docs/koala-3d.md) is available on this branch: a locally served 3D model, rotation controls, and three source-linked knowledge topics. The full encyclopedia application has not been implemented yet.
 
-The [model study](docs/model-lab.md) compares existing online candidates with an original Australian sea lion experiment. Open `http://127.0.0.1:4173/model-lab.html` after starting the server. These are review assets, not approved realistic encyclopedia models; see the [sourcing report](docs/realistic-animal-assets.md) for species and quality gaps.
+The [animal cards](docs/model-lab.md) now include original models of an Australian sea lion, red kangaroo and spinifex hopping mouse, following the project owner's accepted sea-lion style. Open `http://127.0.0.1:4173/model-lab.html` after starting the server. They are textured 3D illustrations, not scientific scans.
+
+For the teammate's Next.js application, use the [copy-in component guide](integrations/nextjs/README.md). Generate the component and asset ZIP with `node tools/package-nextjs-kit.mjs /absolute/output/animalpedia-nextjs-kit`. The current sandbox stays buildless; the adapter includes a Client Component, scoped CSS, typed animal records, and local public assets.
 
 Run the prototype with `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist`, then open `http://127.0.0.1:4173/`. No package installation is required. Run `npm run check` for source and asset validation.
 
@@ -38,7 +40,7 @@ cd animalpedia
 git switch -c feat/your-task
 ```
 
-The current prototype uses static HTML, CSS, JavaScript, and a pinned local copy of model-viewer. The full application's stack remains a team decision.
+The current prototype uses static HTML, CSS, JavaScript, and a pinned local copy of model-viewer. The teammate plans to build the full application in Next.js; use the provided adapter to integrate these cards.
 
 ## Suggested responsibilities
 

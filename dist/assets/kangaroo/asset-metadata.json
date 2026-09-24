@@ -1,0 +1,31 @@
+{
+  "scientificName": "Osphranter rufus",
+  "representation": "Original experimental adult male; no anatomical scan; not expert validated",
+  "blenderBounds": {
+    "min": [
+      -1.4804720878601074,
+      -0.3900262713432312,
+      0.02688313089311123
+    ],
+    "max": [
+      0.5199999809265137,
+      0.39003828167915344,
+      1.6955794095993042
+    ]
+  },
+  "gltfBounds": {
+    "min": [
+      -1.4804720878601074,
+      0.02688313089311123,
+      -0.39003828167915344
+    ],
+    "max": [
+      0.5199999809265137,
+      1.6955794095993042,
+      0.3900262713432312
+    ]
+  },
+  "triangles": 106094,
+  "glbBytes": 10747172,
+  "meshObjects": 1
+}

@@ -1,0 +1,11 @@
+{
+  "glbSha256": "e5dedf92326140a7bed98c0d52fa2d6da20be78067ecd230eb9a78f30537a84e",
+  "glbBytes": 10747172,
+  "triangles": 106094,
+  "meshes": 1,
+  "materialPrimitives": 7,
+  "embeddedImages": 2,
+  "externalUris": false,
+  "requiredExtensions": [],
+  "roundtripStatus": "Exported GLB reimported and all three-quarter, side and front renders visually inspected; texture and facial materials present; initial bent-limb frame defects corrected"
+}

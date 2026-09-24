@@ -1,6 +1,14 @@
 # Animal model study
 
-This local study separates two workflows: reviewing existing models through their publishers' viewers, and building an original Australian sea lion asset. It does not certify that the candidates meet the encyclopedia's species or realism requirements.
+This local study now presents three original animal cards: Australian sea lion, red kangaroo and spinifex hopping mouse. The project owner accepted the sea-lion illustration style; the two new models follow it. Earlier external candidates remain in the data as historical references and are accessible by their old hash links, but the primary selector shows only the three original models.
+
+## Next.js handoff and spacing fix
+
+See `integrations/nextjs/README.md` for the portable Client Component. The package generator gathers typed data, models, posters, source records and the pinned local renderer into a copy-in ZIP. It was built in an isolated Next.js project rather than changing the static prototype's stack.
+
+The model stage formerly stretched vertically to match a long details column, while the model itself kept a fixed height. The stage and viewer now have bounded heights independent of that column. Technical details and credits are folded into a disclosure. The Next.js component uses the same bounded layout and scoped styles, including narrow-container behavior.
+
+The red kangaroo GLB is 10,747,172 bytes / 106,094 triangles. The spinifex hopping mouse GLB is 12,670,200 bytes / 128,432 triangles. Both use original generated base-color and normal textures, embedded in the GLB. All three inspection images for each were rendered after reimporting the export. Their assets are in `dist/assets/kangaroo/` and `dist/assets/mouse/`; reproducible Blender scripts are in `tools/kangaroo/` and `tools/mouse/`.
 
 ## Open locally
 

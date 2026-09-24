@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import { candidates, embedUrl } from '../../dist/model-candidates.js';
 
 const dist = new URL('../../dist/', import.meta.url);
@@ -32,6 +33,10 @@ for (const model of candidates) {
     assert((await stat(new URL(file, dist))).size > 0, file);
   }
   const bytes = await readFile(new URL(model.model, dist));
+  const assetRoot = new URL('./', new URL(model.model, dist));
+  const validation = JSON.parse(await readFile(new URL('validation.json', assetRoot), 'utf8'));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), validation.glbSha256 ?? validation.sha256);
+  const bounds = JSON.parse(await readFile(new URL('asset-metadata.json', assetRoot), 'utf8')).gltfBounds;
   assert.equal(bytes.toString('ascii', 0, 4), 'glTF');
   assert.equal(bytes.readUInt32LE(4), 2);
   assert.equal(bytes.readUInt32LE(8), bytes.length);
@@ -54,6 +59,7 @@ for (const model of candidates) {
     assert.equal(topic.position.length, 3); assert.equal(topic.normal.length, 3);
     assert(topic.position.every(Number.isFinite) && topic.normal.every(Number.isFinite));
     assert(topic.normal.some((v) => v !== 0));
+    topic.position.forEach((value, index) => assert(value >= bounds.min[index] - 0.05 && value <= bounds.max[index] + 0.05, `${model.id}/${topic.id}: anchor outside recorded GLB bounds`));
   }
 }
 assert.equal(candidates.find((m) => m.id === 'california-sea-lion').scientificName, 'Zalophus californianus');

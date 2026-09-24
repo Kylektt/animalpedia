@@ -84,7 +84,7 @@ function renderLocal(model, version) {
   activeViewer.addEventListener('pointerdown', () => rotate(false));
   activeViewer.addEventListener('keydown', () => rotate(false));
   $('viewer-host').append(activeViewer);
-  $('viewer-status').textContent = 'Loading the original sea lion model…';
+  $('viewer-status').textContent = `Loading ${model.name.toLowerCase()}…`;
   timer = setTimeout(fail, 30000);
   rendererPromise ??= import('./vendor/model-viewer.min.js');
   rendererPromise.catch(fail);
@@ -127,7 +127,7 @@ function selectModel(model) {
   history.replaceState(null, '', `#${model.id}`);
 }
 
-for (const model of candidates) {
+for (const model of candidates.filter((entry) => entry.type === 'local')) {
   const button = document.createElement('button'); button.type = 'button'; button.className = 'model-choice';
   button.dataset.model = model.id; button.setAttribute('aria-controls', 'viewer-host');
   const label = document.createElement('span'); label.textContent = model.type === 'embed' ? 'Existing model' : 'Original experiment';

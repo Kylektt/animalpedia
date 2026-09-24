@@ -1,0 +1,15 @@
+{
+  "glbVersion": 2,
+  "embeddedImages": 2,
+  "externalURIs": 0,
+  "meshCount": 1,
+  "materialCount": 6,
+  "triangles": 128432,
+  "bytes": 12670200,
+  "sha256": "be87679ee2714a6b0bc7ccb526b625a77744c33fff470d6016a5c174dab20595",
+  "glbReimportPreviewFiles": [
+    "glb-roundtrip-front.png",
+    "glb-roundtrip-side.png",
+    "glb-roundtrip-three-quarter.png"
+  ]
+}
