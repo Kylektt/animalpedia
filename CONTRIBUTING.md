@@ -1,18 +1,19 @@
-# 团队协作指南
+# Contribution guide
 
-## 一项任务，一个负责人，一个分支
+## One task, one owner, one branch
 
-- 开始前在 Issue 中认领，写明准备修改的范围和验收标准。
-- 推荐分支名：`feat/12-animal-search`、`fix/23-mobile-layout`、`docs/7-animal-sources`。
-- 每个人使用自己的本地 clone；不要共用同一个工作目录。
-- 日常开发通过 PR 合并到 `main`；这是团队约定，仓库初始化不代表已启用强制分支保护。
-- PR 尽量小，至少请一位队友检查。集成人合并后通知大家更新分支。
-- 公共配置、依赖文件、路由入口和数据结构由集成人协调修改，避免同时改动。
-- 数据格式改变前先告知相关队友，并同步更新约定和调用方。
+- Claim an issue before starting. State your scope and acceptance criteria.
+- Suggested branch names: `feat/12-animal-search`, `fix/23-mobile-layout`, or `docs/7-animal-sources`.
+- Use your own local clone; do not share a working directory.
+- Merge changes into `main` through PRs. This is a team convention; repository initialization does not imply enforced branch protection.
+- Keep PRs small and ask at least one teammate to review them. After merging, the integration owner should let the team know to update their branches.
+- Coordinate changes to shared configuration, dependencies, route entry points, and data structures with the integration owner.
+- Discuss data format changes with affected teammates and update both the contract and its consumers.
+- Write documentation, issues, PR descriptions, and user-facing copy in English.
 
-## 日常操作
+## Daily workflow
 
-开始任务：
+Start a task:
 
 ```sh
 git switch main
@@ -20,25 +21,25 @@ git pull --ff-only
 git switch -c feat/12-animal-search
 ```
 
-完成后：
+When ready, stage the specific files you changed, then commit and push:
 
 ```sh
-git add <本次任务的文件>
+git add path/to/changed-file
 git commit -m "feat: add animal search"
 git push -u origin HEAD
 ```
 
-随后在 GitHub 创建 PR，描述变化、验证方法，并写 `Closes #12` 关联任务。提交前检查 diff，确保没有混入无关文件或密钥。
+Open a PR on GitHub describing the change and how you verified it. Use `Closes #12` to link the issue. Inspect your diff before submitting to avoid unrelated files or secrets.
 
-## 验收与内容
+## Verification and content
 
-- 功能按 Issue 的验收标准检查；不要把未执行的测试描述为通过。
-- 页面变更附桌面或手机截图。
-- 不把 AI 生成的动物知识直接视作已核实事实。
-- 优先使用可追溯的博物馆、动物园、研究机构等资料；保留来源链接和查阅日期。
-- 图片保留来源、作者、许可及所需署名，确认可以使用。
-- 不提交 `.env`、API 密钥、个人凭据或用户隐私数据。
+- Check the issue's acceptance criteria. Never report a test as passing unless you ran it.
+- Include desktop or mobile screenshots for page changes.
+- Treat AI-generated animal facts as unverified until checked against reliable sources.
+- Prefer traceable museum, zoo, and research institution material. Keep source links and access dates.
+- Record image sources, creators, licenses, and required attribution, and confirm that the images can be used.
+- Never commit `.env` files, API keys, credentials, or private user data.
 
-## 协作节奏
+## Team rhythm
 
-每次同步只说三件事：已完成什么、接下来做什么、被什么阻塞。先合并最小可用流程，再逐步加内容和视觉效果。
+At each check-in, share what is done, what comes next, and any blockers. Merge the smallest usable flow first, then add content and visual improvements.

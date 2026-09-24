@@ -1,19 +1,19 @@
 ---
-name: 团队任务
-about: 认领一个有明确边界和验收标准的任务
+name: Team task
+about: Define a task with clear scope and acceptance criteria
 title: ""
 labels: ""
 assignees: ""
 ---
 
-## 目标
+## Goal
 
-## 修改范围
+## Scope
 
-## 验收标准
+## Acceptance criteria
 
 - [ ]
 
-## 依赖与协作
+## Dependencies and coordination
 
-依赖哪个任务？是否涉及公共配置或数据格式？
+Which tasks does this depend on? Does it affect shared configuration or data formats?

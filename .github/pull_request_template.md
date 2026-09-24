@@ -1,13 +1,13 @@
-## 变化
+## Changes
 
-说明用户可见的变化，以及关联的任务：Closes #
+Describe the user-visible change and link the task: Closes #
 
-## 验证
+## Verification
 
-- 实际执行的命令或手动检查：
-- 页面截图（如适用）：
+- Commands or manual checks actually performed:
+- Screenshots, if applicable:
 
-## 协作影响
+## Team impact
 
-- 是否改变共享数据格式、依赖或公共配置？
-- 未完成项或已知限制：
+- Does this change shared data formats, dependencies, or configuration?
+- Incomplete work or known limitations:
