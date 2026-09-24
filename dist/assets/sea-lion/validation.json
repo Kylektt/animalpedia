@@ -1,0 +1,11 @@
+{
+  "glbSha256": "f3f2b48e0e7951ca281783116239f6dceb7ceb56d214cfae710ade67e1a7c7ea",
+  "glbBytes": 11241104,
+  "triangles": 127274,
+  "meshes": 1,
+  "materialPrimitives": 5,
+  "embeddedImages": 2,
+  "externalUris": false,
+  "requiredExtensions": [],
+  "roundtripStatus": "Exported GLB reimported; three-quarter and side renders visually inspected, with matching texture, nose, eye and whisker appearance"
+}

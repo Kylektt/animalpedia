@@ -1,0 +1,32 @@
+{
+  "scientificName": "Neophoca cinerea",
+  "representation": "Original experimental adult female; no anatomical scan; not expert validated",
+  "blenderBounds": {
+    "min": [
+      -1.2511670589447021,
+      -0.5682018399238586,
+      0.03375886008143425
+    ],
+    "max": [
+      0.7356551289558411,
+      0.5681855082511902,
+      1.1084634065628052
+    ]
+  },
+  "gltfBounds": {
+    "min": [
+      -1.2511670589447021,
+      0.03375886008143425,
+      -0.5681855082511902
+    ],
+    "max": [
+      0.7356551289558411,
+      1.1084634065628052,
+      0.5682018399238586
+    ]
+  },
+  "triangles": 127274,
+  "glbBytes": 11241104,
+  "meshObjects": 1,
+  "materialPrimitives": 5
+}

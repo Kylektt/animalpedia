@@ -6,7 +6,7 @@ Research date: 2026-09-24. Branch: `feat/realistic-australian-animals`.
 
 Use free assets only, with realistic anatomy and surface detail. The agreed species are spinifex hopping mouse (*Notomys alexis*), Australian sea lion (*Neophoca cinerea*), and red kangaroo (*Osphranter rufus*). Keep the existing local, buildless model-viewer setup and English interface.
 
-**No model has passed all acceptance requirements. No new animal has been integrated or rendered in the application.** This is a sourcing record, not a completed three-animal demo. The existing stylized koala remains the only integrated model. No purchase or new deployment was performed.
+**No model has passed the final realism acceptance requirements.** The subsequent [model study](model-lab.md) integrates the existing candidates through official online embeds and an original experimental Australian sea lion as a local GLB. The original has been rendered and inspected but remains stylized. This sourcing record is not a completed three-species realistic demo. No purchase or new deployment was performed.
 
 ## Candidates reviewed
 
