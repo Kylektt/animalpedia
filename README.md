@@ -16,6 +16,27 @@ Run the prototype with `python3 -m http.server 4173 --bind 127.0.0.1 --directory
 
 The separate [animal media pack](https://github.com/Kylektt/animalpedia/releases/tag/media-pack-2026-09-24) contains 18 photos and 4 videos for the team, with source records and an English handoff on the release page. Download the ZIP from the release assets; it is not stored in Git history.
 
+## Next.js handoff
+
+**Deliverable: three reusable, interactive animal cards for the website.** Place an `AnimalCard` in an animal detail page or a featured-animal section. It includes the 3D animal, camera controls, numbered information markers, source-linked facts, and the compact card layout.
+
+Recommended integration: download [animalpedia-nextjs-kit.zip](https://github.com/Kylektt/animalpedia/releases/download/animal-cards-v0.1.0/animalpedia-nextjs-kit.zip), then follow the included English README. Copy `components/animalpedia/` and `public/animalpedia/` into the Next.js application. The ZIP is a ready-to-copy snapshot of the component and assets on this branch; the website owner keeps control of routes, page layout, navigation and branding.
+
+```tsx
+import { AnimalCard } from '@/components/animalpedia/AnimalCard';
+import { animals } from '@/components/animalpedia/animals';
+
+export default function AnimalPage() {
+  return <AnimalCard animal={animals['red-kangaroo']} />;
+}
+```
+
+Animal IDs: `australian-sea-lion`, `red-kangaroo`, `spinifex-hopping-mouse`. The component also accepts another animal record to switch the displayed animal; the kit includes a selector example.
+
+For a custom presentation, the individual `.glb` files and posters can be reused with the website's own viewer. Using the supplied component preserves the demonstrated interactions and framing. `dist/model-lab.html` is the local preview; the Next.js integration entry point is `AnimalCard.tsx` in the kit. The separate photo/video media pack linked above serves editorial media needs.
+
+Source is on [`feat/realistic-australian-animals`](https://github.com/Kylektt/animalpedia/tree/feat/realistic-australian-animals). Changes are committed and pushed to that feature branch; integration into the website and any merge into `main` remain with the website owner.
+
 ## Proposed Hackathon MVP
 
 - Animal directory with images, names, and categories.
